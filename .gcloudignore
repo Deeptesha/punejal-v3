@@ -1,0 +1,10 @@
+# Explicitly allow app and components folders for GCP Cloud Build
+.git
+.gitignore
+.dockerignore
+.next/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+punejal_rapids_starter.py
