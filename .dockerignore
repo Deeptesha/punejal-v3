@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.gitignore
+.venv
+punejal_rapids_starter.py
+README.md
+Dockerfile
+.dockerignore
