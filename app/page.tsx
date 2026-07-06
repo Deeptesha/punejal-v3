@@ -6,6 +6,7 @@ import TopBar, { TopSection } from '@/components/TopBar';
 import SimulationsView from '@/components/SimulationsView';
 import NetworkDiagnosticsView from '@/components/NetworkDiagnosticsView';
 import CommandCenterView from '@/components/CommandCenterView';
+import TelemetryView from '@/components/TelemetryView';
 
 // Page meta per nav item
 const PAGE_META: Record<NavId, { title: string; subtitle: string }> = {
@@ -72,6 +73,8 @@ export default function HomePage() {
         return <NetworkDiagnosticsView pipelineData={pipelineData} />;
       case 'equity':
         return <CommandCenterView pipelineData={pipelineData} />;
+      case 'telemetry':
+        return <TelemetryView pipelineData={pipelineData} />;
       default:
         return <PlaceholderView title={meta.title} subtitle={meta.subtitle} />;
     }
